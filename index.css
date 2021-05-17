@@ -1,0 +1,438 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #ffffff;
+  display: flex;
+}
+
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-top: 5px;
+  margin: auto;
+  justify-content: center;
+}
+
+.logo{
+	margin-right: 10px;
+}
+
+/*Logo header style*/
+.logo-img{
+	float: left;
+	margin: 5px;
+	height: 40px;
+	width: 40px;
+	justify-content: center;
+}
+
+.logo-text{
+	float: left;
+	padding-left: 5px;
+	padding-top: 16px;
+	font-weight: 600;
+}
+
+.phone{
+	justify-content: center;
+	padding-top: 20px;
+	padding-left: 10px;
+}
+
+.socials{
+	padding-top: 18px;
+	justify-content: center;
+}
+
+.twitter{
+	float: right;
+	height: 25px;
+	width: 25px;
+	cursor: pointer;
+	margin-right: 20px;
+}
+
+.facebook{
+	float: right;
+	height: 25px;
+	width: 25px;
+	margin-right: 20px;
+	cursor: pointer;
+}
+
+/*menu style*/
+img.menu-header{
+	float: right;
+	margin: 5px;
+	height: 40px;
+	width: 35px;
+	justify-content: center;
+}
+
+.menu-header:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.menu-text{
+	float: right;
+	padding-top: 16px;
+	padding-right: 5px;
+	font-weight: 600;
+}
+
+.dropdown {
+  float:right;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  right: 0;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 5%;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+  text-align: right;
+  margin-top: 50px;
+}
+
+* {box-sizing:border-box}
+
+.carousel{
+	/*padding-top:10px;
+	*/padding-bottom: 10px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides{
+	display: none;
+}
+
+.one{
+	display: contents;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 10px 10px 10px 10px;
+  user-select: none;
+}
+
+/* Position the "next button" */
+.next {
+  right: 0;
+  margin-right: 5px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+/* Position the "prev button" */
+.prev{
+	margin-left: 5px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text{
+	color: white;	
+	padding: 8px 12px;
+  	position: absolute;
+  	padding-left: 15%;
+  	width: 100%;
+  	text-align: left;
+}
+
+.small {
+  font-size: 18px;
+  bottom: 68%;
+  font-weight: 700;
+}
+
+.big {
+  font-size: 5vw;
+  bottom: 30%;
+  font-weight: 1000;
+}
+
+.small2 {
+  font-size: 16px;
+  bottom: 20%;
+  font-weight: 700;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.row {
+  display: -webkit-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Row 2: text with side image  */
+.text-img{
+	padding-top: 30px;
+	align-content: center;
+	margin-right: 200px; 
+	margin-left:200px;
+}
+
+.side-text{
+	margin: 50px 50px 100px 50px;
+	vertical-align: middle;
+	justify-content: space-between;
+
+}
+
+.green{
+	color: #009933;
+	opacity: 0.8;
+	font-weight: 850;
+	margin-bottom: 20px;
+	font-size: 14px;
+}
+
+.title{
+	color:rgb(30,30,30);
+	font-size: 30px;
+	font-weight: 1000;
+	margin-bottom: 20px;
+}
+	
+.p{
+	color: rgb(60,60,60);
+	font-weight: 500;
+	font-size: 15px;
+	text-align: justify;
+	line-height: 1.5;
+}
+
+.side-img{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.img1{
+	max-width: 90%
+}
+
+.big-num{
+	display: flex;
+	font-weight: 900;
+	justify-content: center;
+	align-items: center;
+	color: rgb(30,30,30);
+	padding-top: 50px;
+}
+.number{
+	font-size: 70px;
+	text-align: right;
+}
+.p1{
+	font-size: 16px;
+}
+
+.latest-projects{
+	color: rgb(30,30,30);
+	padding: 0px 50px 0px 50px;
+	display: flex;
+	justify-content: space-between;
+}	
+
+.centered{
+	text-align: center;
+	font-weight: 600;
+}
+
+.centered:hover{
+	font-weight: 800;
+	color: #009933;
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+.proj{
+	padding-right: 120px;
+}
+
+/* 4 elements in a row with anim */
+.column-block{
+	margin-left: 50px;
+	margin-right: 50px;
+	position: relative;
+}
+
+.img-row{
+	display: block;
+	max-width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #4ab57a;
+}
+
+.column-block:hover .overlay {
+  opacity: 0.9;
+}
+
+.text-hover{
+  color: #1a1a1a;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 40%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: left;
+}
+
+h1{
+	font-weight: 900;
+}
+
+.not-so-big{
+	font-size: 2em;
+	text-transform: uppercase;
+}
+
+.bold{
+	font-weight: 700;
+}
+
+.paragraph{
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 1.5;
+}
+
+.projects{
+	margin-bottom: 50px;
+}
+
+/* Style the footer */
+.footer {
+  width: 100%
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 0px 50px 0px 50px;
+  background: rgb(220,220,220);
+	margin-top: 100px;
+	color: black;
+}
+
+ul{
+	text-align: left;
+	font-weight: 600;
+}
+
+ul:hover{
+	font-weight: 800;
+	color: #009933;
+	opacity: 0.8;
+	cursor: pointer;
+}
+
+li{
+	list-style-type: none;
+}
+
+/* Responsive for mobile */
+@media only screen and (max-width: 700px){
+	
+	.phone {
+    	display: none;
+  	}
+  	.socials{
+  		display: none;
+ 	 }
+	.small{
+  		font-size: 12px;
+	  }
+  	.small2{
+  		font-size: 10px;
+ 	}
+}
+
+@media (max-width: 800px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
+
+@media only screen and (max-width: 450px){
+	.small{
+		bottom: 76%;
+	}
+}
